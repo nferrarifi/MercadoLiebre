@@ -1,0 +1,54 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+* {
+  font-family: "Roboto";
+}
+
+body {
+  background-color: #eac926;
+  font-size: 12px;
+}
+
+#search-bar {
+  background-color: white;
+  width: 225px;
+}
+
+.gris {
+  color: #03264c;
+}
+
+.titulares {
+  font-size: 24px;
+}
+
+.precios {
+  font-size: 18px;
+}
+
+.descripciones {
+  font-size: 16px;
+}
+
+.footer {
+  margin-top: 50px;
+  text-align: center;
+}
+
+.burger-menu {
+  font-size: 25px;
+  width: 25px;
+  height: 30px;
+  border-radius: 15%;
+  background-color: #1259c3;
+  color: #ebebeb;
+}
+
+.footer-icon {
+  color: #1259c3;
+  font-size: 40px;
+}
+
+#parrafo-destacado {
+  font-weight: 600;
+  color: aquamarine;
+}
