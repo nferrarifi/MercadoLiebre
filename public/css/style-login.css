@@ -57,10 +57,6 @@ header {
   text-align: center;
 }
 
-.banner {
-  width: 100%;
-}
-
 .burger-menu {
   font-size: 25px;
   max-width: 10%;
@@ -127,10 +123,11 @@ article:hover {
 }
 
 main {
-  max-width: 100%;
+  width: 100%;
   padding: auto;
   background-color: #ebebeb;
-  margin-top: 120px;
+  margin-top: 150px;
+  display: flex;
 }
 
 .articulo {
@@ -187,6 +184,25 @@ main {
 .footer div {
   margin-top: 20px;
   font-weight: 600;
+}
+
+.login-form {
+  margin: auto;
+  font-size: 24px;
+}
+
+.boton-login {
+  margin: auto;
+  padding: 5px;
+  background-color: #efefef;
+  font-size: 18px;
+  border-radius: 23%;
+  transition: background-color 500ms;
+}
+
+.boton-login:hover {
+  background-color: #0022aa;
+  color: #efefef;
 }
 
 /*Formularios*/

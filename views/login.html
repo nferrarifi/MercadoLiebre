@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Mercado Liebre</title>
+    <meta name="viewport" content="width=device-width" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="screen"
+      href="/css/style-login.css"
+    />
+  </head>
+  <body>
+    <header class="gris">
+        <div class="logo-browse">
+            <img class="logo" src="/img/logo-mercado-liebre.svg" width="500 px">
+            <div class="search">
+            <input id="search-bar" type="search" placeholder="Busca productos, marcas...">
+            <button type="submit"><i class="fas fa-search"></i></button>
+            </div>
+            <span class="metodos-pago"><i class="fas fa-hand-holding-usd"></i>Compra en cuotas y sin tarjeta de crédito</span>
+        </div>
+        <br></br>
+        <div>
+        <div class="listas">
+        <ul class="listas-left" style="list-style-type: none" style="text-decoration: none;">
+            <li><a href="#">Ofertas</a></li>
+            <li><a href="#">Tiendas Oficiales</a></li>
+            <li><a href="#">Vender</a></li>
+            <li><a href="#">Ayuda</a></li>
+        </ul>
+        <ul class="listas-right" style="list-style-type: none" style="text-decoration: none;">
+            <br>
+            <li><a href="/register"><i class="far fa-id-card"></i>  Crea tu cuenta</a></li>
+            <li><a href="#"><i class="fas fa-sign-in-alt"></i>  Ingresá</a></li>
+            <li><a href="#"><i class="fas fa-shopping-basket"></i>  Mis Compras</a></li>
+        </ul>
+        </div>
+        <div class="burger-menu">
+            <i class="fas fa-bars"></i>
+        </div>
+        </div>
+        
+    </header>      
+    <main>
+      <form class="login-form">
+        <div>
+          <label for="nombreusuario">Ingrese su nombre de usuario</label>
+          <br>
+          <input type="text" name="nombreusuario" required>
+        </div>
+        <div>
+          <label for="contraseña">Ingrese su contraseña</label>
+          <br>
+          <input type="password" name="contraseña" required>
+        </div>
+      <br> 
+      <button type="submit" class="boton-login">Ingresar</button>
+      </form>
+    </main>
+  </body>
+</html>

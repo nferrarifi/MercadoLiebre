@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Mercado Liebre</title>
+    <meta name="viewport" content="width=device-width" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="screen"
+      href="/css/style-register.css"
+    />
+  </head>
+  <body>
+    <header class="gris">
+        <div class="logo-browse">
+            <img class="logo" src="/img/logo-mercado-liebre.svg" width="500 px">
+            <div class="search">
+            <input id="search-bar" type="search" placeholder="Busca productos, marcas...">
+            <button type="submit"><i class="fas fa-search"></i></button>
+            </div>
+            <span class="metodos-pago"><i class="fas fa-hand-holding-usd"></i>Compra en cuotas y sin tarjeta de crédito</span>
+        </div>
+        <br></br>
+        <div>
+        <div class="listas">
+        <ul class="listas-left" style="list-style-type: none" style="text-decoration: none;">
+            <li><a href="#">Ofertas</a></li>
+            <li><a href="#">Tiendas Oficiales</a></li>
+            <li><a href="#">Vender</a></li>
+            <li><a href="#">Ayuda</a></li>
+        </ul>
+        <ul class="listas-right" style="list-style-type: none" style="text-decoration: none;">
+            <br>
+            <li><a href="/register"><i class="far fa-id-card"></i>  Crea tu cuenta</a></li>
+            <li><a href="#"><i class="fas fa-sign-in-alt"></i>  Ingresá</a></li>
+            <li><a href="#"><i class="fas fa-shopping-basket"></i>  Mis Compras</a></li>
+        </ul>
+        </div>
+        <div class="burger-menu">
+            <i class="fas fa-bars"></i>
+        </div>
+        </div>
+        
+    </header>      
+    <main>
+      <body>
+      <div class="div-formulario"> 
+          <form class="formulario">
+            <div>
+              <label>Nombre y Apellido</label>
+              <input type="text" name="nombre" required></input>
+            </div>
+            <div>
+              <label>Nombre de usuario</label>
+              <input type="text" name="username" required min-length="4" max-length="10"></input>
+            </div>
+            <div>
+                <label>Fecha de Nacimiento</label>
+                <input type="date" name="fecha-nacimiento" required ></input>
+            </div>     
+            <div>
+                <label>Calle</label>
+                <input type="text" name="direccion-calle" required></input>
+                <label>Altura</label>
+                <input type="number" name="direccion-altura" required></input>
+            </div>   
+            <div class="perfil">
+                <label>Perfil del usuario</label>
+                <select name="perfil-usuario" class="perfil-usuario" required>
+                    <option value="vendedor">Vendedor</option>
+                    <option value="comprador">Comprador</option>
+                 </select>   
+            </div>        
+            <div class="categorias-interes" required>
+                <label>Categorías de Interés</label>
+                <input type="checkbox" name="categorias" id="categorias" value="electro">
+                    <label for="categorias">Electro</label>
+                <input type="checkbox" name="categorias" id="categorias" value="moda">
+                    <label for="categorias">Moda</label>
+                <input type="checkbox" name="categorias" id="categorias" value="hogar">    
+                    <label for="categorias">Hogar</label>
+                <input type="checkbox" name="categorias" id="categorias" value="jugueteria">    
+                    <label for="categorias">Juguetería</label>
+                <input type="checkbox" name="categorias" id="categorias" value="vida-sana">    
+                    <label for="categorias">Vida Sana</label>  
+            </div>
+            <div>
+                <label>Subí tu foto de perfil</label>
+                <input type="file" required>
+            </div>        
+            <div>
+                <label for="contraseña">Contraseña</label>
+                <input type="password" name="contraseña" required pattern="[a-z] {6,10}">
+            </div> 
+            <div>
+                <label for="confirmar-contraseña">Confirmar contraseña</label>
+                <input type="password" name="confirmar-contraseña" required pattern="[a-z] {6,10}">
+            </div>    
+            <button type="submit">Registrarse</button>
+            <button type="reset">Borrar todo</button>                       
+          </form>
+     
+      </div>
+    </main>
+  </body>
+</html>
