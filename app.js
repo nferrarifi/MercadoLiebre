@@ -2,9 +2,11 @@ const express = require ("express")
 const app = express()
 const path = require ("path")
 
+const PORT = process.env.PORT || 3000;
+
 app.use(express.static("public"))
 
-app.listen (3000, () => {
+app.listen (PORT, () => {
     console.log ("servidor corriendo en el puerto 3000")
 
 })
